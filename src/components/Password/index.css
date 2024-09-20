@@ -1,15 +1,91 @@
 .app-Container {
   display: flex;
-
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   background-color: #9ba9eb;
   height: 100vh;
   width: 100%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 .password-manager-Container {
   display: flex;
   flex-direction: column;
 
   align-items: center;
+}
+.logo {
+  display: flex;
+  align-self: flex-start;
+  height: 5vh;
+  margin-bottom: 5vh;
+}
+
+.input-img-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  background-color: #5763a5;
+  height: 40vh;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+}
+.input-Container {
+  background-color: #454f84;
+  width: 45%;
+  padding: 20px;
+  font-family: Roboto;
+  border-radius: 10px;
+}
+input {
+  width: 90%;
+  height: 40px;
+
+  border: 0px;
+  border-radius: 4px;
+
+  padding: 10px;
+  outline: none;
+}
+
+.logo-input-Container {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.inputLogo {
+  height: 33px;
+  padding: 2%;
+}
+
+button {
+  color: white;
+  display: flex;
+  align-self: flex-end;
+  background-color: #0b69ff;
+  border: 0px;
+  margin-left: auto;
+  padding: 10px;
+  border-radius: 8px;
+  width: 140px;
+}
+.img-lg {
+  width: 40%;
+  height: 35vh;
+}
+.img-sm {
+  display: none;
+  width: 100%;
 }
