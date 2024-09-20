@@ -1,3 +1,4 @@
+/* Container for the entire app */
 .app-Container {
   display: flex;
   flex-direction: column;
@@ -10,12 +11,14 @@
   padding-left: 4%;
   padding-right: 4%;
 }
+
+/* Password manager main container */
 .password-manager-Container {
   display: flex;
   flex-direction: column;
-
   align-items: center;
 }
+
 .logo {
   display: flex;
   align-self: flex-start;
@@ -23,6 +26,7 @@
   margin-bottom: 5vh;
 }
 
+/* Image and form container */
 .input-img-Container {
   display: flex;
   flex-direction: row;
@@ -34,7 +38,10 @@
   width: 100%;
   border-radius: 10px;
   color: white;
+  margin-bottom: 15px;
 }
+
+/* Form input container */
 .input-Container {
   background-color: #454f84;
   width: 45%;
@@ -42,13 +49,13 @@
   font-family: Roboto;
   border-radius: 10px;
 }
+
+/* Input styling */
 input {
   width: 90%;
   height: 40px;
-
   border: 0px;
   border-radius: 4px;
-
   padding: 10px;
   outline: none;
 }
@@ -65,6 +72,7 @@ input {
   justify-content: center;
   margin: 10px;
 }
+
 .inputLogo {
   height: 33px;
   padding: 2%;
@@ -80,12 +88,109 @@ button {
   padding: 10px;
   border-radius: 8px;
   width: 140px;
+  justify-content: center;
 }
+
+/* Large image in the form */
 .img-lg {
   width: 40%;
   height: 35vh;
 }
+
+/* Small image */
 .img-sm {
   display: none;
   width: 100%;
+}
+
+/* Container for your passwords section */
+.your-password-Container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  background-color: #5763a5; /* Same background color as the input image container */
+  border-radius: 10px;
+  color: white; /* Text color for this section */
+}
+
+.search-count-Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-count-Container h1 {
+  flex: 1;
+  text-align: flex-start;
+  color: white; /* White text color */
+}
+
+.search-count-Container input {
+  width: 200px;
+  padding: 8px;
+  flex-shrink: 0;
+  text-align: flex-end;
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  background-color: #f1f1f1; /* Light background color */
+  border-radius: 4px; /* Add slight border radius */
+}
+
+/* Search input field styling with icon */
+.logo-search-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 10px; /* Reduce space between search bar and content */
+}
+.search {
+  background-color: transparent;
+  outline: none;
+}
+
+.search-logo {
+  width: 25px;
+  margin-right: 10px;
+}
+
+hr {
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+
+.passwordsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Adjust the No Password image */
+.no-passwords-img {
+  width: 350px; /* Increase image width */
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: flex-start; /* Adjust to align with the rest of the content */
+  margin-top: 10px;
+  color: white; /* White text for Show Passwords */
+  align-self: flex-end;
+}
+
+.checkbox-container label {
+  margin-left: 5px; /* Reduce spacing between checkbox and label */
+}
+
+.checkbox-container input {
+  width: 15px; /* Reduce checkbox size */
+  height: 15px; /* Reduce checkbox size */
 }

@@ -1,9 +1,16 @@
 import {Component} from 'react'
 
+import PasswordItem from '../PasswordItem'
+
+import {v4 as uuidv4} from 'uuid'
+
 import './index.css'
 
 class Password extends Component {
+  state = {count: 0}
   render() {
+    const {count} = this.state
+    const countpasswords = count > 0 ? true : false
     return (
       <div className="app-Container">
         <img
@@ -56,16 +63,34 @@ class Password extends Component {
           </div>
           <div className="your-password-Container">
             <div className="search-count-Container">
-              <h1>Your Passwords :</h1>
-              <input type="search" />
+              <h1>Your Passwords {count}</h1>
+
+              <div className="logo-search-container">
+                <img
+                  src="https://assets.ccbp.in/frontend/react-js/password-manager-search-img.png"
+                  alt="search"
+                  className="search-logo"
+                />
+                <input type="search" placeholder="Search" className="search" />
+              </div>
             </div>
             <hr />
-            <div>
-              <inpt />
-              <label>Show Passwords</label>
-
-              <ul className="passwordsList"></ul>
+            <div className="checkbox-container">
+              <input type="checkbox" id="checkboxEle" />
+              <label htmlFor="checkboxEle">Show Passwords</label>
             </div>
+
+            {countpasswords ? (
+              <ul className="passwordsList">
+                {/* Render your password list here */}
+              </ul>
+            ) : (
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/no-passwords-img.png"
+                alt="no passwords"
+                className="no-passwords-img"
+              />
+            )}
           </div>
         </div>
       </div>
