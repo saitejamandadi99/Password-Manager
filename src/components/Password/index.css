@@ -1,0 +1,15 @@
+.app-Container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  background-color: #9ba9eb;
+  height: 100vh;
+  width: 100%;
+}
+.password-manager-Container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
